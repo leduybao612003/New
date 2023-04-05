@@ -1,0 +1,101 @@
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.pr {
+    width: 100%;
+}
+
+.toplist__design {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.toplist__item {
+    text-align: center;
+}
+
+.toplist__design img {
+    height: 100%;
+    width: 60%;
+}
+
+.wall__shelf img {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.wall__shelf {
+    background: #FBF1CC;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 200px;
+    border-radius: 50px;
+}
+
+.describe {
+    align-self: center;
+}
+
+.describe p {
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.describe h1 {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.describe a {
+    color: #000;
+    font-weight: 700;
+}
+
+/* responsive Iphone14 Promax  */
+@media screen and (max-width: 430px) {
+
+    
+    .pr {
+        display: none;
+    }
+    .title {
+        font-size: 15px;
+        margin-top: 60px;
+        font-weight: 700;
+    }
+    .toplist__design {
+        flex-flow: wrap;
+        justify-content: center;
+    }
+    .toplist__item {
+        margin-top: 20px;
+    }
+    .wall__shelf {
+        padding: 0;
+    }
+    .wall__shelf img {
+        width: 200px;
+        height: 150px;
+        border-radius: 50px;
+    }
+    .describe p {
+        font-size: 12px;
+    }
+    .describe h1,.describe a {
+        font-size: 15px;
+    }
+    .toplist__item img {
+        height: 270px;
+        width: 200px;
+    }
+}

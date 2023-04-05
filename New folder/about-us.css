@@ -1,0 +1,85 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 4px solid #000;
+    margin: 0 60px;
+    padding: 20px 0;
+}
+.services,.resources,.contact {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.services a,.resources a,.contact a {
+    color: #000;
+    font-weight: 200;
+    font-style: italic;
+}
+.footer__title {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.carousel__wrapper {
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    margin-top: 40px;
+}
+.wp-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+.brand {
+    padding-right: 20px;
+    border-right: 3px solid #000;
+    margin-right: 20px;
+}
+.fa-facebook {
+    color: #0571e6;
+}
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+          background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-twitter {
+    color: #1DA1F2;
+}
+.fa-youtube {
+    color:#FF0000;
+}
+.fa-brands {
+    font-size: 32px;
+    margin:0 10px;
+}
+.coppyright {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* responsive */
+@media screen and (max-width: 430px) {
+
+    .footer {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contact {
+        width: 100%;
+    }
+    .wp-icon {
+        flex-direction: column;
+        align-items: center;
+    }
+    .brand {
+        border: none;
+        
+    }
+}
