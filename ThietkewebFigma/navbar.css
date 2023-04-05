@@ -1,0 +1,102 @@
+.navbar {
+    padding: 0 60px;
+    display: flex;
+}
+.nav__logo{ 
+    font-size: 32px;
+    position: relative;
+    border-bottom: 3px solid #000;
+    font-style: italic;
+}
+.nav__logo img {
+    position: absolute;
+    top: 90%;
+    left: 0;
+}
+.nav__menu {
+    /* margin: 40px 20px; */
+    margin-top: 40px;
+}
+.nav__menu ul {
+    display: flex;
+    padding: 0 20px;    
+    background-color: #fff;
+    justify-content: space-evenly;
+    font-style: italic;
+    text-decoration: underline;
+    border-radius: 50px;
+}
+.nav__menu ul li {
+    margin:  20px;
+    list-style: none;
+}
+.nav__menu ul li a {
+    color: #000;
+    font-weight: 200;
+}
+.nav__menu ul li a:hover {
+    font-weight: 300;
+    transition: all .3 ease;
+}
+.nav__cart {
+     font-size: 32px;
+}
+.nav__cart:hover {
+    cursor: pointer;
+}
+.nav__search {
+    position: relative;
+}
+.nav__search input {
+    outline: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-style: italic;
+    border: none;
+    padding: 13px 30px;
+}
+.search__button {
+    border: none;
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    font-size: 20px;
+    top: 0;
+    right: 0;
+    border-radius: 50px;
+}
+.search__button:hover {
+    cursor: pointer;
+}
+.search__button:focus {
+    border: none;
+    outline: none;
+    background-color: aquamarine;
+    transition: all 0.3s ease-out;
+}
+
+@media screen and (max-width: 430px) {
+    .nav__cart,
+    .nav__search {
+        display: none;
+    }
+    .nav__menu {
+        width: 100%;
+        margin-top: 60px;
+    }
+    .nav__menu ul{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #d9d9d9;
+        
+    }
+    .nav__menu ul li{
+        margin: 0 !important;
+    }
+    .navbar {
+        padding-top: 40px !important;
+    }
+
+}
